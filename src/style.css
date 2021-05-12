@@ -12,10 +12,6 @@ body {
    display: none;
 }
 
-.border {
-   border: 1px solid black;
-}
-
 header {
    width: 1180px;
    margin-top: 32px;

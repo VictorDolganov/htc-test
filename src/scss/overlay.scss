@@ -1,0 +1,91 @@
+.background-overlay {
+   position: fixed;
+   overflow: auto;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   background: #333333;
+   opacity: 0.6;
+}
+
+.modal {
+   position: fixed;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%,-50%);
+   width: 304px;
+   height: 394px;
+   background: #FFFFFF;
+   border-radius: 8px;  
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   p {
+      font-weight: 500;
+      font-size: 28px;
+      line-height: 33px;
+      text-align: right;
+      color: #333333;
+      margin-top: 36px;
+      margin-bottom: 24px;
+   }
+   #login, #password {
+      width: 232px;
+      height: 25px;
+      font: inherit;
+      color: #333333;
+      outline: none;
+      border: none;
+      border-bottom: 1px solid #333333;
+      margin-bottom: 23px;
+      &::placeholder {
+         font-style: normal;
+         font-weight: normal;
+         font-size: 16px;
+         line-height: 19px;
+         color: #828282;
+      }
+   }
+   .checkbox {
+      align-self: flex-start;
+      margin-left: 36px;
+      position:relative;
+      padding-left:25px;
+      input[type=checkbox] {
+         display:none;
+      }
+      label:after {
+         content: '';
+         display: block;
+         height: 16px;
+         width: 16px;
+         border: 1px solid #333333;
+         border-radius: 4px;
+         position: absolute;
+         top: 0;
+         left: 0;
+      }
+      input[type=checkbox]:checked + label:after {
+         background: center url(../assets/checkbox/Vector.png) no-repeat;
+      }
+   }
+   button {
+      margin-top: 111px;
+   }
+   .log-in {
+      background: #E5261E;
+      border-radius: 4px;
+      font: inherit;
+      font-weight: 500; 
+      text-align: center;
+      color: #FFFFFF;
+      width: 113px;
+      height: 38px;
+      border: 0px;
+      cursor: pointer;
+      &:hover {
+         background: #CC221B;
+      }
+   }
+}

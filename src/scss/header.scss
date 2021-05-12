@@ -1,0 +1,101 @@
+header {
+   width: 1180px;
+   margin: 32px auto 44px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   .logo {
+      display: flex;
+      .logo-name {
+         font-size: 20px;
+         line-height: 24px;
+         font-weight: 500; 
+         margin-left: 11px;
+         align-self: center;
+      }
+   }
+   .search {
+      margin-left: 207px;
+      margin-right: auto;
+      width: 402px;
+      height: 25px;
+      align-self: flex-end;
+      display: flex;
+      justify-content: space-between;
+      .search-place {
+         font: inherit;
+         color: #333333;
+         font-weight: 500; 
+         outline: none;
+         border: none;
+         border-bottom: 1px solid #333333;
+         align-self: center;
+         width: 302px;
+         height: 25px;
+         &::placeholder {
+            font: inherit;
+            font-weight: 400; 
+            color: #828282;
+         }
+      }
+      .search-button {
+         padding: 0;
+         border: none;
+         font: inherit;
+         font-weight: 500; 
+         background-color: transparent;
+         cursor: pointer;
+         color: #E5261E;
+      }
+   }
+   .enter-area {
+      display: flex;
+      align-items: center;
+      div {
+         width: auto;
+         input {
+            font: inherit;
+            font-weight: 500; 
+            color: #333333;
+            position: relative;
+            outline: none;
+            border: none;
+            text-align: right;
+         }
+         .user-name  {
+            margin: 0;
+            font: inherit;
+            font-weight: 500; 
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+         }
+      }
+      .log-in {
+         background: #E5261E;
+         border-radius: 4px;
+         font: inherit;
+         font-weight: 500; 
+         text-align: center;
+         color: #FFFFFF;
+         width: 113px;
+         height: 38px;
+         border: 0px;
+         cursor: pointer;
+         &:hover {
+            background: #CC221B;
+         }
+      }
+      .log-in-autorisation {
+         font: inherit;
+         font-weight: 500;
+         text-align: center;
+         border: none;
+         background-color: transparent;
+         cursor: pointer;
+         color: #E5261E;
+         padding: 0;
+         margin-left: 16px;
+      }
+   }
+}
