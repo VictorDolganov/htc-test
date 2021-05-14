@@ -26,8 +26,9 @@ nav {
 }
 
 .news {
-   width: 1180px;
-   height: 478px;
+   width: 100%;
+   max-width: 1180px;
+   min-height: 478px;
    margin: 32px auto;
    > p {
       width: 134px;
@@ -41,6 +42,7 @@ nav {
    .news-cards {
       margin-top: 16px;
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
       figure {
          margin: 0;
@@ -70,18 +72,16 @@ nav {
             opacity: 0.8;
             border-radius: 8px;
             display: none;
-         }
-         &:hover .notation{
             cursor: pointer;
-            display: block;
-         }         
+         }      
       }
    }
 }
 
 .genres {
-   width: 1180px;
-   height: 252px;
+   width: 100%;
+   max-width: 1180px;
+   min-height: 252px;
    margin: 0 auto 72px;
    p {
       width: 87px;
@@ -95,6 +95,7 @@ nav {
    .genres-cards {
       margin-top: 16px;
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
       div {
          width: 280px;

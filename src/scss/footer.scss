@@ -1,8 +1,9 @@
 footer {
    background: #F2F2F2;
-   height: 120px;
+   min-height: 120px;
    width: 100%;
    display: flex;
+   flex-wrap: wrap;
    align-items: center;
    .htc-cs-logo {
       padding-left: 130px;
